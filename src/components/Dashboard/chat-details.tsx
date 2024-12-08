@@ -13,7 +13,7 @@ const ChatDetails: React.FC = () => {
   useEffect(() => {
     const fetchChats = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/v1/chat", {
+        const response = await fetch("https://booking-app-b.vercel.app/api/v1/chat", {
           method: "GET",
         });
         if (!response.ok) {

@@ -25,7 +25,7 @@ const CategoriesComponent = ({ searchQuery }: CategoriesComponentProps) => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/v1/category");
+        const response = await fetch("https://booking-app-b.vercel.app/api/v1/category");
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }

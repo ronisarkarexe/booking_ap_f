@@ -25,7 +25,7 @@ const ChatVerifyComponent = () => {
     setErrorMessage("");
     try {
       const verifyResponse = await fetch(
-        "http://localhost:8000/api/v1/user/verify",
+        "https://booking-app-b.vercel.app/api/v1/user/verify",
         {
           method: "POST",
           headers: {
@@ -44,7 +44,7 @@ const ChatVerifyComponent = () => {
       }
 
       const chatResponse = await fetch(
-        "http://localhost:8000/api/v1/chat/create",
+        "https://booking-app-b.vercel.app/api/v1/chat/create",
         {
           method: "POST",
           headers: {

@@ -12,7 +12,7 @@ const Login: React.FC = () => {
     e.preventDefault();
     try {
       setError("");
-      const response = await fetch("http://localhost:8000/api/v1/user/login", {
+      const response = await fetch("https://booking-app-b.vercel.app/api/v1/user/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -41,7 +41,7 @@ const AddCategory = () => {
     e.preventDefault();
     try {
       const response = await fetch(
-        "http://localhost:8000/api/v1/category/create",
+        "https://booking-app-b.vercel.app/api/v1/category/create",
         {
           method: "POST",
           headers: {

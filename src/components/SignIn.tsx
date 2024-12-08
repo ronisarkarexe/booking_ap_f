@@ -44,7 +44,7 @@ const SignIn: React.FC = () => {
 
     try {
       setError("");
-      const response = await fetch("http://localhost:8000/api/v1/user/signin", {
+      const response = await fetch("https://booking-app-b.vercel.app/api/v1/user/signin", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

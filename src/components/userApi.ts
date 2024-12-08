@@ -1,6 +1,6 @@
 export const fetchUserData = async (token: string) => {
   try {
-    const response = await fetch("http://localhost:8000/api/v1/user", {
+    const response = await fetch("https://booking-app-b.vercel.app/api/v1/user", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
